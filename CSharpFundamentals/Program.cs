@@ -1,44 +1,49 @@
-﻿// See https://aka.ms/new-console-template for more information
+﻿using System;
 
-//string personName = "Bishnu";
+// Top-level statements - implicit Main() entrypoint
+//Conditional - branching
 
-// Camel casing: personheight, personHeight
-// Pascal casing: PersonHeight 
+Console.Write("Enter any number: ");
+string numberText = Console.ReadLine();
+short number = short.Parse(numberText);  
 
-// Numbers
-// Integral typec
+if(number % 2 == 0)
+{
+    Console.WriteLine(number + " is Even");
+}
+else
+{
+    Console.WriteLine(number + " is Odd");
+}
 
-//byte a = 255;
-//short b = 32353;
-//int c = 424324234;
-//long d = 32535245232532523;
+//Classwork: Ask user to enter his name and convert that to uppercase and print on console
+Console.Write("Enter a name: ");
+string name = Console.ReadLine();
+string UpperCaseName = name.ToUpper();
+Console.Write(name + " Converted to Upper Case is: " + UpperCaseName);
 
-// Floating point (with decimal points) for float end with f, for decimal end with m bc system by default assumes double.
-// float type can accurately give decimal points upto 6
-// double upto 15. decimal upto 30 however takes up more memory
-//float e = 234234.3453f;
-//double f = 242243.23425;
-//decimal g = 352353535.35353355m;
 
-//char only has single quotes vs string double quotes.
-//char h = 'M';
 
-// boollean 
-//bool j = true;
 
-DateTime x = DateTime.Now;
-Console.WriteLine("Hello, World!");
-Console.WriteLine(x);
 
-//string clientName = "Smith";
-//byte age = 31;
-//byte weight = 70;
-//bool passportStatus = true;
-//string Dob = "11/10/1991";
 
-Person person1 = new();
-person1.name = "Smith";
-person1.age = 12;
 
-string message = person1.GetLegalGreeting();
-Console.WriteLine(message);
+
+
+
+
+
+
+
+
+
+
+
+// Person person1 = new();
+// person1.name = "Smith";
+// person1.age = 12;
+
+// string message = person1.GetLegalGreeting();
+// Console.WriteLine(message);
+
+
