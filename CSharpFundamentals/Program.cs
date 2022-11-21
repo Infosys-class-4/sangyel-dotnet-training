@@ -1,44 +1,44 @@
-﻿using System;
+﻿// using System;
 
 // Top-level statements - implicit Main() entrypoint
-//Conditional - branching
+// Conditional - branching
 
-Console.Write("Enter any number: ");
-string numberText = Console.ReadLine();
-short number = short.Parse(numberText);  
+// Console.Write("Enter any number: ");
+// string numberText = Console.ReadLine();
+// short number = short.Parse(numberText);  
 
-if(number % 2 == 0)
-{
-    Console.WriteLine(number + " is Even");
-}
-else
-{
-    Console.WriteLine(number + " is Odd");
-}
+// if(number % 2 == 0)
+// {
+//     Console.WriteLine(number + " is Even");
+// }
+// else
+// {
+//     Console.WriteLine(number + " is Odd");
+// }
 
-//Classwork: Ask user to enter his name and convert that to uppercase and print on console
-Console.Write("Enter a name: ");
-string name = Console.ReadLine();
-string UpperCaseName = name.ToUpper();
-Console.WriteLine(name + " Converted to Upper Case is: " + UpperCaseName);
+// Classwork: Ask user to enter his name and convert that to uppercase and print on console
+// Console.Write("Enter a name: ");
+// string name = Console.ReadLine();
+// string UpperCaseName = name.ToUpper();
+// Console.WriteLine(name + " Converted to Upper Case is: " + UpperCaseName);
 
-int marks = 45;
-if(marks < 40)
-{
-    Console.WriteLine("failed");
-}
-else if(marks < 60)
-{
-    Console.WriteLine("Passed. You are placed in second division");
-}
-else if(marks < 80)
-{
-    Console.WriteLine("Passed. You are placed in first division");
-}
-else
-{
-    Console.WriteLine("Congratulations you have Passed with Distinction");
-}
+// int marks = 45;
+// if(marks < 40)
+// {
+//     Console.WriteLine("failed");
+// }
+// else if(marks < 60)
+// {
+//     Console.WriteLine("Passed. You are placed in second division");
+// }
+// else if(marks < 80)
+// {
+//     Console.WriteLine("Passed. You are placed in first division");
+// }
+// else
+// {
+//     Console.WriteLine("Congratulations you have Passed with Distinction");
+// }
 
 // Console.Write("Enter a number upto 5: ");
 // string romanNumerical = Console.ReadLine();
@@ -68,7 +68,7 @@ else
 //     Console.WriteLine("Invalid Input, please enter again");
 // }
 
-//switch - branching statement and selection statement
+// switch - branching statement and selection statement
 
 // switch(n)
 // {
@@ -95,12 +95,29 @@ else
 // Console.WriteLine(message);
 
 
-for(int i = 1; i <=100; i++)
-{
-    if(i % 2 == 0)
-    {
-        Console.Write(i+" ");
-    }
-}
-Console.WriteLine(" ");
+// for(int i = 1; i <=100; i++)
+// {
+//     if(i % 2 == 0)
+//     {
+//         Console.Write(i+" ");
+//     }
+// }
+// Console.WriteLine(" ");
 
+// short[] ages = {10, 11, 10, 3, 5, 7, 8, 8, 9, 4, 6};
+
+// for(int i = 1; i <= ages.Length; i++)
+// {
+//     Console.Write(ages[] * ages[] + " ");
+// }
+//Console.Write("\n using for each:");
+// foreach(var ages1 in ages)
+// {
+//     Console.Write(ages1 * ages1 + " ");
+// }
+
+/*
+for(int eight = 1; eight <= 10; eight++)
+{
+    Console.WriteLine($"8 * {eight} = {8 * eight}");
+}*/
