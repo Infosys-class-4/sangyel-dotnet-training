@@ -32,6 +32,16 @@ class EntryPoint
         float[] num1={11.0f, 22 , 33, 44, 55, 66};
         var a2=m.calAverageArray(num1);
         Console.WriteLine($"the average for an Array is {a2}");
+
+        BodiedExpression Abe = new();
+        var m1 = Abe.Method1(6240,1150);
+        Console.WriteLine($"Product return{m1}");
+
+        var m2 = Abe.Method2(11,10);
+        Console.WriteLine($"bodied expression return{m2}");
+
+        var (m3,m4) = Abe.Method3(9,9);
+        Console.WriteLine($"returning two values at a time {m3,m4}");
         
         
 
