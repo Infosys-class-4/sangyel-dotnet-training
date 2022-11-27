@@ -10,5 +10,4 @@ class Animal
     string scientificName;
     byte numberOfLegs;
     bool domestic;
-
 }

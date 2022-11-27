@@ -32,7 +32,7 @@ class EntryPoint
         float[] num1={11.0f, 22 , 33, 44, 55, 66};
         var a2=m.calAverageArray(num1);
         Console.WriteLine($"the average for an Array is {a2}");
-        
+
 
         BodiedExpression Abe = new();
         var m1 = Abe.Method1(6240,1150);
@@ -43,5 +43,15 @@ class EntryPoint
 
         var (m3,m4) = Abe.Method3(9,9);
         Console.WriteLine($"returning two values at a time {m3}{m4}");
+
+        House house1 = new House(4, 40);//calling a constructor
+        house1.Length =34.6f;
+        house1.Width - 23.89f;
+        var chatAreaHouse1 = house1.GetAreaOfChat();
+
+        House house2 - new House(50, 400, 45.34f, 20.56f);
+        var chatAreaHouse2 = house2.GetAreaOfChat();
+
+
     }
 }
