@@ -6,14 +6,14 @@
 // a property with full definition
 // a read only property
 
-namespace Bonds;
+//namespace Bonds;
 using System;
 
 class Mortgage
 {
-    public byte amortization;
+    byte amortization;
     int amount;
-    public byte term;
+    byte term;
     bool fixedOrVariable;
     float rates;
     public float payment(get; set;)
@@ -22,13 +22,14 @@ class Mortgage
 
     }
 
-    public Mortgage(byte months, float interestRate, float pmt)
+    public Mortgage(int principal, byte months, float interestRate, float pmt)
     {
+        amount = principal;
         amortization = months;
         rates = (interestRate/12)/100;
         payment = pmt;
     }
 
-    public float GetMonthlyPayments() => amount[rates*Math.Pow(1+rates,months)]/[Math.Pow(1+rates,GetMonthlyPayments-1)];
+    public float GetMonthlyPayments() => amount * [rates * Math.Pow( 1+rates, amortization) ] / [Math.Pow( 1+rates, amortization-1) ];
 
 }
