@@ -52,6 +52,10 @@ class EntryPoint
         House house2 - new House(50, 400, 45.34f, 20.56f);
         var chatAreaHouse2 = house2.GetAreaOfChat();
 
+         
+
+
+
 
     }
 }
