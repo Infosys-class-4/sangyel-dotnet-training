@@ -30,6 +30,6 @@ class Mortgage
         payment = pmt;
     }
 
-    public float GetMonthlyPayments() => amount * [rates * Math.Pow( 1+rates, amortization) ] / [Math.Pow( 1+rates, amortization-1) ];
+    public double GetMonthlyPayments() => amount * (rates * Math.Pow( 1+rates, amortization) ) / (Math.Pow( 1+rates, amortization-1) );
 
 }

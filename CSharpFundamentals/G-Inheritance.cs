@@ -41,11 +41,11 @@ class A
 
 interface IB //permits multiple inheritance in C# and Java//solely used for abstraction
 {
-    public void Start();
+    public void Start()
     {
 
     }
-    public void Stop(); 
+    public void Stop()
     {
 
     }
