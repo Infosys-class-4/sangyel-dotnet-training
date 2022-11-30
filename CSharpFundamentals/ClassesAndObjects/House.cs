@@ -3,8 +3,8 @@ class House
     bool haveGarage; //default false
     short numberOfFloors;
     short numberOfRooms;
-    public float Length(get; set;) // Length becomes a property
-    public float Width(get; set;)
+    public float Length{get; set;} // Length becomes a property
+    public float Width {get; set;}
     public House()
     {
         
@@ -28,8 +28,5 @@ class House
   //      return Length * Width
 //    }
     public float GetAreaOfChat() => Length * Width;
-
-
-
 }
 

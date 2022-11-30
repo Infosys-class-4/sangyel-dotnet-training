@@ -13,10 +13,10 @@ class Mortgage
 {
     byte amortization;
     int amount;
-    byte term;
+    short term;
     bool fixedOrVariable;
     float rates;
-    public float payment(get; set;)
+    public float payment{get; set;}
     public Mortgage()
     {
 

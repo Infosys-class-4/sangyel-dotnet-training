@@ -46,13 +46,22 @@ class EntryPoint
 
         House house1 = new House(4, 40);//calling a constructor
         house1.Length =34.6f;
-        house1.Width - 23.89f;
+        house1.Width = 23.89f;
         var chatAreaHouse1 = house1.GetAreaOfChat();
 
-        House house2 - new House(50, 400, 45.34f, 20.56f);
+        House house2 = new House(50, 400, 45.34f, 20.56f);
         var chatAreaHouse2 = house2.GetAreaOfChat();
 
-         
+        Mortgage loan = new Mortgage(500000, 300, 5.0f,);
+
+        Mansion housetype = new Mansion();
+
+        IB d1 = new D();//d1 new object of IB which is implement in class D
+        d1.Start();
+
+
+        
+
 
 
 
