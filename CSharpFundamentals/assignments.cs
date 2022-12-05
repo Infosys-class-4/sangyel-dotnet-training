@@ -34,18 +34,18 @@ byte[] numbers = { 23, 45, 11, 21, 33, 12, 90, 98, 87, 65, 55, 99, 234, 76, 10, 
 // Find squares of all numbers which are greater than 70
 // Find square root of all numbers which are multiple of 3
 
-var greaterThan70 = numbers.Where(z => numbers*numbers > 70);
+var greaterThan70 = numbers.Where(x => Math.Pow(2,x) > 70);
 
-var sqrtDivisible3 = numbers.Where(y = Math.sqrt(numbers) % 3);
+var sqrtDivisible3 = numbers.Where(y => Math.Sqrt(numbers[]));
     Console.WriteLine("square of numbers greater than 70 is ")
-foreach ( var n in numbers)
+foreach ( var n in greaterThan70)
 {
     Console.Write(" "+n);
 }
 Console.WriteLine();
 Console.WriteLine("square root number divisible by 3 is: ");
 
-foreach( var n in numbers)
+foreach( var n in sqrtDivisible3)
 {
     Console.Write(" "+n);
 }
