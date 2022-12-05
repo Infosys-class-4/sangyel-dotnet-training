@@ -37,7 +37,7 @@ byte [] numbers = { 23, 45, 11, 21, 33, 12, 90, 98, 87, 65, 55, 99, 234, 76, 10,
 
 var greaterThan70 = numbers.Where(x => Math.Pow(2,x) > 70);
 
-var sqrtDivisible3 = numbers.Where(y => Math.Round(Math.Sqrt(y,2) % 3);
+var sqrtDivisible3 = numbers.Where(y => Math.Round(Math.Sqrt(y)) % 3 == 0);
     Console.WriteLine("square of numbers greater than 70 is ");
 foreach ( var n in greaterThan70)
 {
