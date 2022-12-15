@@ -12,14 +12,31 @@ namespace HelloMVC.Controllers
         }
         public IActionResult Contact()
         {
-            Dictionary<string, int> employeeContactInfo = new();
-            employeeContactInfo.Add("Bishu Rawal", 981026598); //key has to be unique, value can be repeated
-            employeeContactInfo.Add("Sangyel Tenzing", 985102469);
-            employeeContactInfo.Add("Sakshyam Shrestha", 898146978);
-            employeeContactInfo.Add("Sitaram Panta", 810245879);
+            List<Employee> employees = new();
 
-            return View(employeeContactInfo);
+            Employee employee1 = new();
+            employee1.Name = "Sitaram Panta";
+            employee1.Phone = "9854123654";
+            employee1.Address = "Bhaktapur";
 
+            Employee employee2 = new();
+            employee1.Name = "Sitaram Panta";
+            employee1.Phone = "9854123654";
+            employee1.Address = "Bhaktapur";
+
+            employees.Add(employee1);
+            employees.Add(employee2);  
+
+            /*Dictionary<long, string> employeeContactInfo = new()
+            {
+                [9810265987] = "Bisnhu Rawal", //key has to be unique, value can be repeated
+                [9810265986] = "Sangyel Tenzing",
+                [9810265985] = "Sitaram Panta",
+                [9810265984] = "Prahlad Shakya",
+                [9810265983] = "Sakshyam Shrestha"
+            };
+            return View(employeeContactInfo);*/
+            return View(employees);
 
         }
     }
