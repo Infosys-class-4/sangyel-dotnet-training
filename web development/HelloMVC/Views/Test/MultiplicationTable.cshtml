@@ -1,0 +1,23 @@
+@model int
+
+@{
+    var x = Model;
+}
+
+<h1>Multiplication table from 1 to @x</h1>
+
+<div class="container">
+    <div class="row row-cols-3">
+        @for (byte i = 1; i <= x; i++)
+        {
+            <div class="col">
+                @for (byte j = 1; j <= 10; j++)
+                {
+                    <h6>@i * @j = @(i * j)</h6>
+                }
+            </div>
+        }
+    </div>
+</div>
+
+
